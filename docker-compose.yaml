@@ -2,8 +2,8 @@ version: '3'
 
 services: 
     service-1: 
+        build: .
         init: true
-        image: eurekarobotics/focal:rave-20200901
         container_name: dev-env
         stop_signal: SIGINT
         network_mode: host
